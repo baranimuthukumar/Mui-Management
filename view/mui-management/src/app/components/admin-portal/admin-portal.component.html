@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="menu-icon">
+    <mat-icon>account_balance</mat-icon>
+  </button>
+  <span>Mui Application</span>
+  <span class="runner-spacer"></span>
+</mat-toolbar>
+
+<div class="container">
+  <h1 mat-title> Add Trust Detail</h1>
+  <div class="admin-form">
+    <mat-form-field class="admin-form-input" appearance="outline">
+      <mat-label>Enter the Trust name:</mat-label>
+      <input matInput [(ngModel)]="name" placeholder="Trust Name">
+    </mat-form-field>
+  </div>
+  <div style="margin-bottom: 10px;">
+    <button mat-raised-button color="primary" (click)="onAddTrust()">Add Detail</button>
+</div>
+<h1 mat-title> Select Trust</h1>
+<div class="admin-form">
+  <mat-form-field class="admin-form-input" appearance="outline">
+    <mat-label>Trust-Names</mat-label>
+     <mat-select [(ngModel)]="mainCategory" (selectionChange)="onCategorySelected($event)">
+        <mat-option *ngFor="let category of mainGroups" [value]="category">{{ category.trustName }}</mat-option>
+      </mat-select> 
+  </mat-form-field>
+</div>
+<div style="margin-bottom: 10px;">
+  <button mat-raised-button color="primary" (click)="onGetDetails()">Get details</button>
+  <button mat-raised-button style="margin-left: 10px;" color="primary" (click)="startUpdateDetails()">Start Update Details</button>
+  <button mat-raised-button style="margin-left: 10px;" color="primary" (click)="downloadPDF()">Download PDF</button>
+</div>
+  
+</div>
+
+
+  
+

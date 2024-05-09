@@ -1,0 +1,35 @@
+.runner-spacer {
+  flex: 1 1 auto;
+}
+.container{
+  max-width:1000px;
+  margin:0 auto;
+}
+.donation-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top:10px;
+}
+.donation-form1-input{
+  width: 30%;
+}
+.donation-form-input{
+  width: 47%;
+}
+.mat-form-field-custom {
+  font-weight: bold;
+}
+.runnerTable{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+::ng-deep.mat-form-field-disabled .mat-form-field-underline 
+    { 
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.42) 33%, #c2c7cc 0 ) !important; 
+    background-size: 1px 100% !important;
+     background-repeat: repeat-x !important; 
+    } 
+
+

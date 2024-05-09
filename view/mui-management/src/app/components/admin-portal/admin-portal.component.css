@@ -1,0 +1,17 @@
+.runner-spacer {
+  flex: 1 1 auto;
+}
+
+.container{
+  max-width:1000px;
+  margin:0 auto;
+}
+.admin-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top:10px;
+}
+.admin-form-input{
+  width: 47%;
+}
