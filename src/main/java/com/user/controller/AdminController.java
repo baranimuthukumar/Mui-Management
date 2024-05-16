@@ -12,7 +12,7 @@ import com.user.entity.AdminEntity;
 import com.user.services.AdditionDetailsService;
 import com.user.services.AdminService;
 
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="*")
 @RestController
 public class AdminController {
 	

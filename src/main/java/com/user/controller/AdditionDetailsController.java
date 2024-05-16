@@ -13,7 +13,7 @@ import com.user.entity.AllDataListEntity;
 import com.user.services.AdditionDetailsService;
 
 
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="*")
 @RestController
 public class AdditionDetailsController {
 

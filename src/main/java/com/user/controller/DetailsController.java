@@ -19,7 +19,7 @@ import com.user.entity.AdditionDetailsEntity;
 import com.user.services.AdditionDetailsService;
 import com.user.util.PDFGenerator;
 
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="*")
 @Controller
 public class DetailsController {
 
